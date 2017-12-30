@@ -1,0 +1,101 @@
+﻿header h1 {
+  font-size: 1em;
+  padding: 4em;
+  background: #eaeaeb; }
+
+body {
+  font-family: "Nunito";
+  color: #272727;
+  background: url("images/Background selflove.png") fixed;
+  background-size: 100%;
+  margin: 0; }
+
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  margin: 0; }
+
+p {
+  font-size: 5em; }
+
+nav {
+  background-color: #4fc7b5;
+  width: 100%;
+  /*padding: 10px 50px;*/ }
+  nav ul {
+    margin: 0; }
+  nav li {
+    display: inline-block;
+    padding: 1em 2em;
+    list-style: none;
+    text-decoration: none; }
+  nav li:hover {
+    background-color: #eaeaeb; }
+  nav a {
+    font-size: 1em;
+    color: #272727;
+    text-decoration: none; }
+  nav #toggle {
+    display: none; }
+
+.subitems {
+  display: none;
+  position: absolute; }
+  .subitems li {
+    display: block;
+    background-color: #4fc7b5;
+    padding: 1em 1em; }
+
+.hasSub:hover .subitems {
+  display: block;
+  position: absolute; }
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+@media screen and (max-width: 600px) {
+  header {
+    height: 4em; }
+    header h1 {
+      font-size: 1em;
+      padding: 1.5em; }
+  ul {
+    padding-left: 0px; }
+  nav {
+    height: 2em; }
+    nav li {
+      width: 100%;
+      background: #4fc7b5;
+      padding: 1em 1em !important;
+      float: none; }
+    nav .subitem {
+      padding: 1em;
+      display: block;
+      width: 100%; }
+  .navi {
+    display: block;
+    position: relative; }
+  .navi .menu {
+    height: auto;
+    position: relative;
+    top: 5px;
+    /*transition: top 0.5s ease-in-out;*/ }
+  .navi #toggle {
+    display: none; }
+  .navi #toggle + label {
+    display: block;
+    width: 100%;
+    height: 87px;
+    background: url(/Images/hamburger.png) center right no-repeat;
+    max-height: 25px;
+    max-width: 25px;
+    position: relative;
+    left: 0.8em;
+    /*top: auto;*/
+    cursor: pointer;
+    z-index: 10; }
+  #toggle:checked ~ .menu {
+    right: -600px; } }
+

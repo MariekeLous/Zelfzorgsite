@@ -1,0 +1,49 @@
+﻿@media only screen and (max-width : 640px) {
+
+
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 5px 0;
+        margin: 0;
+        float: none;
+    }
+
+    .navi {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+        /*Transition effect*/
+
+        .navi .menu {
+            height: auto;
+            position: relative;
+            top: 10px;
+            transition: top 0.5s ease-in-out;
+        }
+
+        .navi #toggle {
+            display: none;
+        }
+
+            .navi #toggle + label {
+                display: block;
+                width: 100%;
+                height: 87px;
+                background: url(/Images/hamburger.png) center right no-repeat;
+                max-height: 25px;
+                max-width: 25px;
+                position: absolute;
+                right: 1em;
+                top: auto;
+                cursor: pointer;
+                border-bottom: 1px solid #000;
+                z-index: 10;
+            }
+
+   #toggle:checked ~ .menu {
+        top: -400px;
+    }
+}
